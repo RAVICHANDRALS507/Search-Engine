@@ -1,0 +1,108 @@
+<html lang="en">
+    <head>
+
+        <!-- This Demo Search Engine displays at the tab bar -->
+        <title>Demo Search Engine</title>
+
+        <!-- Set of tools that helps code compactable and to rank in search -->
+        <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="description" content="search engine">
+        <meta name="keywords" content="HTML searchbar">
+        <meta name="robots" content="INDEX FLOW">
+
+        <!-- Links to access Fonts Icons from the server\ -->
+        <link href="https://fonts.googleapis.com/css?family=kaushan+script|poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        
+        <!-- css style sheet begins here\ -->
+        <style>
+            * {
+                margin: 0px;
+                padding: 25px;
+                box-sizing: border-box;
+            }
+
+            body{
+                padding-top: 85px;
+                background: linear-gradient(#E73C7E, #23D5AB,#23A6d5, #23A6d5 ,#E73C7E );
+                background-size: 300% 100%;
+                font-family: sans-serif;
+            }
+
+            .searchbox{
+                width: 50%;
+                margin: auto;
+            }
+
+            .searchbox input,button{
+                width: 75%;
+                border: 5px solid white;
+                padding: 17px;
+                background: transparent;
+                text-transform: capitalize;
+            }
+        
+            .searchbox button{
+                width: 25%;
+                background: #eee;
+                color: black;
+                float: right;
+                border-left: 0px;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+
+            .Listicons{
+                text-align: center;
+                margin: 100px;
+                /* border: solid; */
+                }
+            
+            .Listitem{
+                text-decoration: none;
+                color: #333;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+            .Listitem:hover{
+                color: white;
+                transition: 1s;
+            } 
+
+            /* This media query is for web responsive */
+            @media only screen and (max-width:1297px){
+              .searchbox{
+                width: 80%;
+              }     
+              .searchbox{
+                padding-top: 90px;
+              }     
+              body{
+                padding-top: 120px;
+              }                   
+              }                       
+        </style><!-- end of css -->
+
+    </head>
+    <body>
+        <h1>Search Engine</h1>
+        <div class="searchbox">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" placeholder="your search goes here">
+                <button>search</button>
+            </form>
+        </div>	
+        <div class="Listicons">
+            <a href="https://www.instagram.com" class="Listitem"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+            <a href="https://www.youtube.com" class="Listitem"><i class="fa-brands fa-square-youtube"></i>Youtube</a>
+            <a href="https://www.github.com" class="Listitem"><i class="fa-brands fa-square-github"></i>Github</a>
+            <a href="https:/www.Facebook.com" class="Listitem"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+            <a href="https://www.twitter.com" class="Listitem"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+            <a href="https://www.Linkedin.com" class="Listitem"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        </div>
+	</body>
+</html>
+
+
